@@ -3,7 +3,7 @@ name: React CI/CD Pipeline
 on:
     push:
          branches:
-          - main
+          - master
 
 jobs:
     build-and-deploy:
@@ -19,7 +19,7 @@ jobs:
            node-version: 20
         - name: Install dependencies
           run: npm ci
-          
+
         - name: Build React App
           run: npm run build
         
