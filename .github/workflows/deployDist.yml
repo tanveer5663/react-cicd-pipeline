@@ -8,6 +8,6 @@ jobs:
       - name: get-code
         run: |
             echo "cloningRepo"
-            echo "${{toJson(github)}}"
+            # echo "${{toJson(github)}}"
             git clone  https://github.com/${{github.repository}}.git 
       
