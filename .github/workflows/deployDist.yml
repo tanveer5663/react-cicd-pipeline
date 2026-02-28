@@ -8,9 +8,10 @@ jobs:
       - name: get-code
         uses: actions/checkout@v6
       - name: Install Node
-        uses: action/setup-node@v4
+        uses: cybergavin/setup-nodejs-project@v1
         with:
            node-version: '22'
+           lock-file: package-lock.json
       - name: print node version
         run: node -v
         
