@@ -38,6 +38,7 @@ function About() {
     <div>
       <h1 onClick={() => setValue(value + 1)}> {value}</h1>
       tanveer About {id}
+      Hiii
       <p>{price}</p>
     </div>
   );
